@@ -2,6 +2,8 @@ const express = require('express');
 const server = express();
 const fs = require('fs');
 
+
+
 server.use(express.static('public'));
 
 server.get('/', (req, res) => {
@@ -13,7 +15,11 @@ server.get('/', (req, res) => {
 });
 
 server.get('/contacts', (req, res) => {
-    res.send('This is the contacts page');
+    fs.readFile('data.json', (err, data) => {
+
+        res.send(JSON.stringify(data));
+    });
+    
 });
 
 server.listen(8080);

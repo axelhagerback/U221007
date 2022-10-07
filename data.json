@@ -1,7 +1,6 @@
 {
     "contacts": [
-    {"Name": "", "Telefonnummer": ""},
-    {"Name": "", "Telefonnummer": ""},
-    {"Name": "", "Telefonnummer": ""}
-    ]
+    {"Name": "Casper", "Number": "073-999-44-18"},
+    {"Name": "Isac", "Number": "076-806-44-50"},
+    {"Name": "Elliot", "Number": "076-047-08-50"}]
 }
