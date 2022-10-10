@@ -1,6 +1,14 @@
-{
-    "contacts": [
-    {"Name": "Casper", "Number": "073-999-44-18"},
-    {"Name": "Isac", "Number": "076-806-44-50"},
-    {"Name": "Elliot", "Number": "076-047-08-50"}]
-}
+[
+    {
+        "Name": "Casper",
+        "Number": "0739994418"
+    },
+    {
+        "Name": "Isac",
+        "Number": "076806-4450"
+    },
+    {
+        "Name": "Elliot",
+        "Number": "0760470850"
+    }
+]

@@ -1,27 +1,26 @@
+var list = document.createElement('ul');
+var contactsArray;
+
 showContacts = () => {
     contactList.hidden = false;
-    //contactList.innerHTML = '';
-
+    list.innerHTML = '';
     const XHR = new XMLHttpRequest();
 
     XHR.onload = () => {
-        Contacts = JSON.parse(XHR.responseText);
-
-        var list = document.createElement('ul');
+        contactsArray = JSON.parse(XHR.responseText);
         contactList.appendChild(list);
 
-        Contacts.forEach(contact => {
+        contactsArray.forEach(contact => {
             var listRow = document.createElement('li');
-            listRow.innerHTML = (`${contact.Name} || ${contact.Number}}`)
+            listRow.innerHTML = (`${contact.Name} || ${contact.Number}`)
             list.appendChild(listRow);
         });
     };
-
     XHR.open('GET', '/contacts');
     XHR.send();
-
-
-
-    
 };
 
+
+saveContacts = () => {
+
+};

@@ -8,8 +8,15 @@
     <title>U221007</title>
 </head>
 <body>
-    <button type="button">Add new contact</button>
     <button type="button" onclick=showContacts()>Show all contacts</button>
+
+    <form method="post">
+        <input type="text" id="name" name="Name" placeholder="name:">
+        <input type="number" id="number" name="Number" placeholder="phonenumber:">
+        <button type="submit">Add</button>
+    </form>
+
+    <button type="button" onclick=saveContacts()>Save</button>
 
     <div id="contactList" hidden></div>
 </body>
